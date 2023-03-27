@@ -1,7 +1,5 @@
 # UTModuleVBA
-# License
-The source code is licensed MIT. The website content is licensed CC BY 4.0,see LICENSE.
-テスト用モジュール。18日に整理。
+
 
 Sub CheckDuplicate_calc()
 
@@ -71,3 +69,6 @@ Sub ReferenceCheck_Ver2()
     Destination:=Range(Cells(2, 15), Cells(lastRow, lastCol))
       
 End Sub
+
+# License
+The source code is licensed MIT. The website content is licensed CC BY 4.0,see LICENSE.
