@@ -1,4 +1,6 @@
 # UTModuleVBA
+# License
+The source code is licensed MIT. The website content is licensed CC BY 4.0,see LICENSE.
 テスト用モジュール。18日に整理。
 
 Sub CheckDuplicate_calc()
