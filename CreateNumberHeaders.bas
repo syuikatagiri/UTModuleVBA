@@ -1,14 +1,14 @@
 Attribute VB_Name = "CreateNumberHeaders"
 Sub CreateNumberHeaders()
 
-Dim lastCol As Long: lastCol = 15
+    Dim lastCol As Long: lastCol = 15
 
-' —ñŒ©o‚µ‚Ì‰º‚Éu—ñŒ©o‚µ+”’lv‚ğİ’è
-For col = 1 To lastCol
-    Cells(2, col).Value = Cells(1, col).Value + "1"
-Next
+    ' åˆ—è¦‹å‡ºã—ã®ä¸‹ã«ã€Œåˆ—è¦‹å‡ºã—+æ•°å€¤ã€ã‚’è¨­å®š
+    For col = 1 To lastCol
+        Cells(2, col).Value = Cells(1, col).Value + "1"
+    Next
 
-' u—ñŒ©o‚µ ”’lv‚ğ‰º•ûŒü‚ÉƒI[ƒgƒtƒBƒ‹
-Range("A2:O2").AutoFill Range("A2:O30"), xlFillSeries
+    ' ã€Œåˆ—è¦‹å‡ºã— æ•°å€¤ã€ã‚’ä¸‹æ–¹å‘ã«ã‚ªãƒ¼ãƒˆãƒ•ã‚£ãƒ«
+    Range("A2:O2").AutoFill Range("A2:O30"), xlFillSeries
 
 End Sub
