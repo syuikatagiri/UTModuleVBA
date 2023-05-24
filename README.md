@@ -1,6 +1,7 @@
 列見出しの下に「列見出し + 1」を埋め込む関数 <br>
 [CreateNumberHeaders](https://github.com/syuikatagiri/UTModuleVBA/blob/main/CreateNumberHeaders.bas)
-
+全シートの「A1」を選択状態にするマクロ<br>
+[selectA1AllSheets](https://github.com/syuikatagiri/UTModuleVBA/blob/main/selectA1AllSheets.bas)
 
 
 Sub CheckDuplicate_calc()
@@ -76,27 +77,6 @@ Sub PrintColWidth()
 
 End Sub
 
-Sub 全シートをA1セルに移動し選択した状態にする()
-    Dim objSheets As Sheets
-    Dim objSheet As Object 'Sheet以外も入るので汎用的なObject型にしています。
-
-    'アクティブブックの全シートをオブジェクトにセットします。
-    Set objSheets = ActiveWorkbook.Worksheets
-
-    For Each objSheet In objSheets
-        'Selectメソッドを効かせるためシートをアクティブにします。
-        objSheet.Activate
-        'A1セルに移動し選択します。
-        objSheet.Range("A1").Select
-    Next
-    
-    'オブジェクトを解放します。
-    Set objSheets = Nothing
-    Set objSheet = Nothing
-    
-    Worksheets(1).Select
-    
-End Sub
 
 
 開発のライフサイクルプロセスの流れと各プロセスの実施内容を説明できる
