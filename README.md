@@ -1,3 +1,7 @@
+列見出しの下に「列見出し + 1」を埋め込む関数 <br>
+[CreateNumberHeaders](https://github.com/syuikatagiri/UTModuleVBA/blob/main/CreateNumberHeaders.bas)
+
+
 
 Sub CheckDuplicate_calc()
 
@@ -23,26 +27,7 @@ Dim lastCol As Long: lastCol = 100
     Next
     
 End Sub
-' 列見出しの一つ下のセルに、
-' "列見出し1"という文字列を埋め込んで、
-' 最後にオートフィルかけるマクロ。
-'
-' 最終的に各列のセルに "列見出し+連番の数値" がうめこまれる
-Sub ReferenceCheck_Takt()
-    
-    Dim lastCol As Long: lastCol = 6
-    Dim lastRow As Long: lastRow = 1
-    
-    ' 列見出し+1を設定
-    For col = 1 To lastCol
-        Cells(3, col).Value = Cells(2, col).Value + "1"
-    Next
-    
-    ' 連番になるようオートフィル
-    Range("B3:F3").AutoFill _
-    Destination:=Range(Cells(3, 2), Cells(lastRow, lastCol))
-    
-End Sub
+
 
 
 
