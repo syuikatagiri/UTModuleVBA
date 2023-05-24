@@ -9,5 +9,11 @@
 指定した列幅の取得<br>
 ・[PrintColumnWidth](https://github.com/syuikatagiri/UTModuleVBA/blob/main/PrintColumnWidth.bas)
 
+## 概要
+仕事の一環で作ったマクロテスト用のモジュール格納庫。
+
+ネットに落ちているものよりも、<br>
+自分の中で整理されたモノを使いたいと考えこのリポジトリを作成。
+
 
 
